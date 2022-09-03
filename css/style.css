@@ -1,0 +1,39 @@
+/*# sourceMappingURL=style.css.map */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.form > * {
+    margin-bottom: 20px;
+}
+
+.field{
+    border: 1px solid goldenrod;
+    height: 20px;
+    max-width: 250px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.errorText {
+    color: red;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.taskWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.doneTask {
+    text-decoration: line-through;
+}
