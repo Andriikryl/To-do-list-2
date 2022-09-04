@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+.error{
+    border: 1px solid red;
+}
+.errorText{
+    color: red;
+    font-weight: bold;
+}
+
+.doneTask{
+    text-decoration: line-through;
+}
+
 
 
 section{

@@ -1,6 +1,7 @@
 // const errorClass ="error";
 
 // function getErrorElement(message){
+
 //     const errorMsg = document.createElement("p");
 //     errorMsg.classList.add("errorText")
 //     errorMsg.textContent = message;
@@ -19,15 +20,14 @@
 // form.addEventListener("submit", function (event){
 //     event.preventDefault();
 //     if (!form.name.value.trim().length){
-    
-
 //      addErrorMessege(form.name, "field must not be empty!");
 //     }
 
 //     if (!form.address.value.trim().length){
 //         addErrorMessege(form.address, "field must not be empty!");
 //     }
-// })
+//     console.log("... API CALL")
+// });
 
 
 
@@ -52,7 +52,7 @@ const taskList = document.querySelector(".taskList");
 
 todoForm.elements.task.addEventListener("input", function(){
     this.classList.remove(errorClass);
-    this.closest(".fildWrapper")
+    this.closest(".fieldWrapper")
     .querySelectorAll('.errorText')
     .forEach((error) => error.remove());
 });
@@ -112,10 +112,11 @@ todoForm,addEventListener("submit", function(event){
         const wrapper = this.closest(".taskWrapper");
         const id = wrapper.getAttribute("data-id");
 
-        const task = tasksArray.find((taskItem) =>  taskItem.id === id);
+        const task = tasksArray.find((taskItem) =>  taskItem.id == id);
+
         task.isDone = this.checked;
 
-        if (this.checked) {
+        if (task.isDone) {
             wrapper.querySelector("p").classList.add("doneTask");
             return;
 
