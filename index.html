@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <section>
+
+ <div class="container">
+    <video class="video" playsinline autoplay muted loop id="bgvid">
+        <source src="video/mp4" type="video/mp4">
+      </video>
     <div class="todoList">
         <form id="todo" class="form" name="todo" action="">
             <div class="fieldWrapper">
                 <input 
                 name="task" 
-                class="field" 
+                class="field text__place" 
                 type="text" 
                 placeholder="To do something"
                 />
             </div>
-            <button type="submit">Add Task</button>
+            <button type="submit" class="form__btn">Add Task</button>
         </form>
-        <select >
+        <select class="select" >
             <option >In progress</option>
             <option >Done</option>
             <option >All</option>
@@ -29,11 +35,15 @@
         <div class="taskList">
 
         </div>
+        
+  
     </div>
 
 
 
+</div>
 
+</section>
 
 
     <script src="js/app.js"></script>

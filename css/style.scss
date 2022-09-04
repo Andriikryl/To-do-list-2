@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+section{
+.container{
+    max-width: 1200px;
+    padding-inline: 20px;
+    margin: 0 auto;
+    height: 100vh;
+
+    .video{
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+   
+    .todoList{
+        padding-top: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+        .form__btn{
+            padding: 10px 10px;
+            background-color: hsla(0deg, 0%, 100%, 0.2) ;
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            border: 1px solid #b3adcc;
+            margin-left: 30%;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .select{
+            padding: 10px 10px;
+            background-color: hsla(0deg, 0%, 100%, 0.2) ;
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            border: 1px solid #b3adcc;
+            margin-top: 10px;
+        }
+
+
+        .text__place{
+            max-width: 300px;
+            padding: 20px 30px;
+            background-color: hsla(0deg, 0%, 100%, 0.2) ;
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            border: 1px solid #b3adcc;
+            font-size: 15px;
+        }
+    
+    }
+}
+}
+
+.taskWrapper{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    p{
+        margin-left: 10px;
+    }
+}
